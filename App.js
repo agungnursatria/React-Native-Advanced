@@ -15,8 +15,8 @@ const DATA = [
 ];
 
 export default class App extends React.Component {
-  renderCard(item){
-    return(
+  renderCard(item) {
+    return (
       <Card
         key={item.id}
         title={item.text}
@@ -37,7 +37,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Deck 
+        <Deck
           data={DATA}
           renderCard={this.renderCard}
         />
